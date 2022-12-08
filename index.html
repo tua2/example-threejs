@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/img.png">
+    <link rel="stylesheet" href="./style..css">
+    
+    <title>EXAMPLE THREE JS</title>
+</head>
+
+<body>
+
+    <div id="header">
+        <ul id="nav">
+            <li>
+                <a href="#">Geometric blocks</a>
+                <ul class="subnav">
+                    <li><a href="#" onclick="addMesh(0)">Box</a></li>
+                    <li><a href="#" onclick="addMesh(1)">Globular</a></li>
+                    <li><a href="#" onclick="addMesh(2)">Cone</a></li>
+                    <li><a href="#" onclick="addMesh(3)">Cylinder</a></li>
+                    <li><a href="#" onclick="addMesh(4)">Wheel</a></li>
+                    <li><a href="#" onclick="addMesh(5)">Teapot</a></li>
+                    <li><a href="#" onclick="addMesh(6)">Tetrahedron</a></li>
+                    <li><a href="#" onclick="addMesh(7)">Octahedron </a></li>
+                    <li><a href="#" onclick="addMesh(8)">Icosahedron</a></li>
+                    <li><a href="#" onclick="addMesh(9)">Round shape</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a href="#">Forward Line
+                    </a>
+                <ul class="subnav">
+                    <li><a href="#" onclick="addPoints()">Point</a></li>
+                    <li><a href="#" onclick="addLine()">Line</a></li>
+                    <li><a href="#" onclick="addSolid()">Solid</a></li>
+                    <input accept="image/*" onchange="addTexture()" type="file" id="up_hinh" style="display:none" />
+                    <li>
+                    
+                        <a href="#" onclick="$('#up_hinh').trigger('click'); return false;">Texture</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Light </a>
+                <ul class="subnav">
+                    <li><a href="#" onclick="addPointLight()">Turn On</a></li>
+                    <li><a href="#" onclick="removePointLight()">Turn Off</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">  Animation
+                    </a>
+                <ul class="subnav">
+                    <li><a id="ani-1" href="#" onclick="activeAnimation1()">Animation X</a></li>
+                    <li><a id="ani-2" href="#" onclick="activeAnimation2()">Animation Y</a></li>
+                    <li><a id="ani-3" href="#" onclick="activeAnimation3()">Animation Z</a></li>
+                    <li><a id="" href="#" onclick="removeAnimation()">Cancel</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/TransformControls.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://threejs.org/examples/js/loaders/FBXLoader.js"></script>
+    <script src="./lib/dat.gui.min.js"></script>
+    <script src="https://threejs.org/examples/js/geometries/TeapotGeometry.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
